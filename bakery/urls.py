@@ -26,4 +26,6 @@ urlpatterns = [
          name="create-store-item"),
     path("update-store-item/<int:item_id>/", store_views.update_store_item,
          name="update-store-item"),
+    path("delete-store-item/<int:item_id>/", store_views.delete_store_item,
+         name="delete-store-item"),
 ]
